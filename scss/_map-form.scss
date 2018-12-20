@@ -1,0 +1,59 @@
+/*map-form*/
+.map-form{
+	display: flex;
+}
+.map, .form{
+	width: 50%;
+}
+#bg-opacity_form{
+	background: rgba(58,226,206,0.4);
+	width: 100%;
+}
+.map iframe{
+	width: 100%;
+	height: 100%;
+}
+.form{
+	background: url(../img/img_bg-form.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+.form-info{
+	padding: 70px 0;
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	color: #f6f6f6;
+	&__item{
+		display: flex;
+		justify-content: flex-end;
+		input,textarea{
+			width: 70%;
+			margin-left: 50px;
+			background: rgba(226,114,89,0);
+			border: 2px solid #f6f6f6;
+			padding: 10px;
+			&:focus{
+				background: rgba(164,226,40,0.5);
+				color: #FF0400;
+				transition: 0.5s;
+			}
+		}
+		&--button{
+			background: rgba(226,114,89,0);
+			padding: 10px 30px;
+			color: #e8e8e8;
+			font-weight: $fwb;
+			&:hover{
+				background: linear-gradient(#C2FF91,#F7FF14);
+				color: #474747;
+				box-shadow: inset 0 0 10px #E5664C;
+				transition: 0.5s;
+			}
+		}
+	}
+}

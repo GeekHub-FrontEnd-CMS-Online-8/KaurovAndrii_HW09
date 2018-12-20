@@ -1,0 +1,13 @@
+/*brands*/
+#brands{
+	background: #f5f5f5;
+	padding: 30px;
+}
+.brands-items{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__icon:hover{
+		box-shadow: 0 0 20px #FF503C, inset 0 0 10px #FF503C;
+	}
+}

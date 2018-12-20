@@ -1,0 +1,27 @@
+.clients-content{
+	text-align: center;
+	&__text{
+		color: #434d59;
+		&--grey{
+			color: #abaeb2;
+			font-size: $fs*5;
+		}
+	}
+	&__photo-adam{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: $fmm;
+		margin-bottom: 50px;
+		&--circle{
+			border-radius: 50%;
+		}
+		h4{
+			color: #29323c;
+		}
+		p{
+			color: #696d73;
+			font-size: $fs+5;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+/*pricing*/
+.packs{
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+	&__pack{
+		width: 32.3%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		border: 1px solid #eeeeee;
+		&:hover{
+			border-top: 5px solid #485563;
+			transform: scale(1.1);
+			transition: 0.5s;
+		}
+		&-title{
+			border-bottom: 1px solid #eeeeee;
+			padding: 10px 20px;
+			& h4{
+				font-family: $fmm;
+				font-size: $fs*2.5;
+				color: #485563;
+			}
+			& h3{
+				font-family: $fmm;
+				font-size: $fs*5;
+				color: #485563;
+			}
+			& h5{
+				font-size: &fs+6;
+				color: #97999d;
+				font-weight: $fwr/2;
+			}
+		}
+		&-text{
+			padding: 30px;
+			& p{
+				color: #29323c;
+				font-size: &fs+6;
+			}
+			& button{
+				background: #485563;
+				border: #485563;
+				color: #e8e8e8;
+				font-weight: $fwb;
+				border-radius: 30px;
+				padding: 10px 30px;
+				text-transform: uppercase;
+				&:hover{
+					background: linear-gradient(30deg, #E4E5D3,#D7E570);
+					transition: 0.5s;
+					color: #485563;
+					border: 1px solid #7F7EE5;
+					box-shadow: 0 0 3px #E55598, inset 0 0 3px #E55598;
+				}
+			}
+		}
+	}
+}

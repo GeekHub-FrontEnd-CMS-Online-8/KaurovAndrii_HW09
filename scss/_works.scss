@@ -1,0 +1,16 @@
+/*works*/
+.works-gallery{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	img{
+		width: 20%;
+		height: 15%;
+		&:hover{
+			cursor: pointer;
+			transform: scale(0.9);
+			transition: 0.8s;
+			opacity: 0.7;
+		}
+	}
+}
